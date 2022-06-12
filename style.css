@@ -1,0 +1,127 @@
+body,
+html {
+    height: 100%;
+    font-size: medium;
+}
+
+.container-fluid {
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+.bg-orange {
+    background: #ff4511;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff921d, #ff4511);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff921d, #ff4511);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff !important;
+}
+
+.active-sidebar {
+    background-color: white !important;
+    color: #ff4511 !important;
+}
+
+.sidebar-icon {
+    max-width: 60%;
+}
+
+.active-sidebar:hover {
+    color: #ff4511 !important;
+}
+
+/*
+.nav-link:hover {
+    color: #ff4511 !important;
+    background-color: #ff921d !important;
+}
+*/
+
+.titolo-principale {
+    font-weight: bold;
+    color: #ff4511;
+}
+
+.content-column {
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.active-ordine {
+    background: #ff4511;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff921d, #ff4511);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff921d, #ff4511);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff !important;
+
+    font-weight: bold;
+}
+
+.list-group-item {
+    text-align: center;
+    border-color: #ff4511 !important;
+
+}
+
+.content-text {
+    padding-top: 30px;
+}
+
+.btn-orange-moon {
+    background: #ff4511;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff921d, #ff4511);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff921d, #ff4511);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff !important;
+    margin-top: 30px;
+}
+
+.input-group-append {
+    cursor: pointer;
+}
+
+.ombrelloni {
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(245,219,134,255);
+    padding: 20px;
+}
+
+.ombrellone-occupato {
+    height: 50px;
+    width: 50px;
+    background-color: #cc0001;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.ombrellone-disponibile {
+    height: 50px;
+    width: 50px;
+    background-color: #01d119;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.water {
+    background-color: rgb(0, 221, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.spazio-sopra {
+    padding-top: 50px;
+}
+
+.spazio-sotto {
+    padding-bottom: 50px;
+}

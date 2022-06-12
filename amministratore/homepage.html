@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- create login page with boottrap version 5-->
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />-->
+    <!-- MDB -->
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />-->
+
+    <!-- MDB -->
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>-->
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid min-vh-100 min-vw-100">
+        <!-- sidebar -->
+        <div class="row g-0">
+            <div class="col-2 min-vh-100">
+                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light bg-orange" style="height: 100%">
+                    <a href="#"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                        <img class="card-img-top sidebar-icon mx-auto d-block" src="../imgs/DBeach-logo-reversed.svg"
+                            alt="logo">
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-light active active-sidebar" aria-current="page">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#home" />
+                                </svg>
+                                Homepage
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-light" aria-current="page">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#home" />
+                                </svg>
+                                Gestione Prenotazioni
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-light" aria-current="page">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#home" />
+                                </svg>
+                                Imposta Spiaggia
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-light" aria-current="page">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#home" />
+                                </svg>
+                                Gestione Dipendenti
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center link-light text-decoration-none dropdown-toggle"
+                            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../imgs/Amministratore-icona.svg" alt="" width="32" height="32"
+                                class="rounded-circle me-2">
+                            <strong>Amministratore</strong>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col min-vh-100 content-column">
+                <!-- content -->
+                <h1 class="titolo-principale">Homepage</h1>
+                <div class="content-text">
+                    Stato spiaggia
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <span class="water">&nbsp</span>
+                    </div>
+                    <div class="row ombrelloni spazio-sopra">
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-1" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-2" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-3" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-4" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-5" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-6" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-7" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-8" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                    </div>
+                    <div class="row ombrelloni">
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-9" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-10" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-11" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-12" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-13" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-14" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-15" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-16" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                    </div>
+                    <div class="row ombrelloni spazio-sotto">
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-17" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-18" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-19" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-20" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-21" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-disponibile" id="ombrellone-22" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-23" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                        <div class="col">
+                            <span class="ombrellone-occupato" id="ombrellone-24" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <div class="d-grid gap-2">
+                                    <button type="submit"
+                                        class="btn btn-light btn-block btn-orange-moon btn-lg rounded">Visualizza Report</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <script src="../App.js"></script>
+</body>
+
+</html>
