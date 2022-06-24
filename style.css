@@ -125,3 +125,24 @@ html {
 .spazio-sotto {
     padding-bottom: 50px;
 }
+
+.item{
+    border: 1px solid red;
+    border-radius:10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    height:50px;
+    width:500px;
+}
+
+.name-item{
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.quantity{
+    background-color:#f7f7f7;
+     border-radius:10px;
+    border:1px solid grey;
+     text-align:center;
+}
